@@ -69,7 +69,7 @@
 
 ```bash
 # 添加市场
-/plugin marketplace add affaan-m/everything-claude-code
+/plugin marketplace add SX2000CN/everything-claude-code
 
 # 安装插件
 /plugin install everything-claude-code@everything-claude-code
@@ -81,7 +81,7 @@
 
 ```bash
 # 首先克隆仓库
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/SX2000CN/everything-claude-code.git
 
 # 复制规则 (适用于所有项目)
 cp -r everything-claude-code/rules/* ~/.claude/rules/
@@ -326,7 +326,7 @@ The easiest way to use this repo - install as a Claude Code plugin:
 
 ```bash
 # Add this repo as a marketplace
-/plugin marketplace add affaan-m/everything-claude-code
+/plugin marketplace add SX2000CN/everything-claude-code
 
 # Install the plugin
 /plugin install everything-claude-code@everything-claude-code
@@ -340,7 +340,7 @@ Or add directly to your `~/.claude/settings.json`:
     "everything-claude-code": {
       "source": {
         "source": "github",
-        "repo": "affaan-m/everything-claude-code"
+        "repo": "SX2000CN/everything-claude-code"
       }
     }
   },
@@ -356,7 +356,7 @@ This gives you instant access to all commands, agents, skills, and hooks.
 >
 > ```bash
 > # Clone the repo first
-> git clone https://github.com/affaan-m/everything-claude-code.git
+> git clone https://github.com/SX2000CN/everything-claude-code.git
 >
 > # Option A: User-level rules (applies to all projects)
 > cp -r everything-claude-code/rules/* ~/.claude/rules/
@@ -374,7 +374,7 @@ If you prefer manual control over what's installed:
 
 ```bash
 # Clone the repo
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/SX2000CN/everything-claude-code.git
 
 # Copy agents to your Claude config
 cp everything-claude-code/agents/*.md ~/.claude/agents/

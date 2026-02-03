@@ -67,7 +67,7 @@
 
 ```bash
 # 添加市场
-/plugin marketplace add affaan-m/everything-claude-code
+/plugin marketplace add SX2000CN/everything-claude-code
 
 # 安装插件
 /plugin install everything-claude-code@everything-claude-code
@@ -79,7 +79,7 @@
 
 ```bash
 # 首先克隆仓库
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/SX2000CN/everything-claude-code.git
 
 # 复制规则（应用于所有项目）
 cp -r everything-claude-code/rules/* ~/.claude/rules/
@@ -297,7 +297,7 @@ everything-claude-code/
 
 ```bash
 # 将此仓库添加为市场
-/plugin marketplace add affaan-m/everything-claude-code
+/plugin marketplace add SX2000CN/everything-claude-code
 
 # 安装插件
 /plugin install everything-claude-code@everything-claude-code
@@ -327,7 +327,7 @@ everything-claude-code/
 >
 > ```bash
 > # 首先克隆仓库
-> git clone https://github.com/affaan-m/everything-claude-code.git
+> git clone https://github.com/SX2000CN/everything-claude-code.git
 >
 > # 选项 A：用户级规则（应用于所有项目）
 > cp -r everything-claude-code/rules/* ~/.claude/rules/
@@ -345,7 +345,7 @@ everything-claude-code/
 
 ```bash
 # 克隆仓库
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/SX2000CN/everything-claude-code.git
 
 # 将代理复制到你的 Claude 配置
 cp everything-claude-code/agents/*.md ~/.claude/agents/
