@@ -15,7 +15,7 @@
 
 这里的主题包括：代币经济学、记忆持久化、验证模式、并行化策略，以及构建可重用工作流的复利效应。这些是我在 10 多个月的日常使用中提炼出的模式，它们决定了你是从第一个小时就被上下文腐烂所困扰，还是能保持数小时的高效会话。
 
-速查指南和长篇指南中涵盖的所有内容都可以在 GitHub 上找到：`github.com/SX2000CN/everything-claude-code`
+速查指南和长篇指南中涵盖的所有内容都可以在 GitHub 上找到：`github.com/SX2000CN/claude-bockup`
 
 ---
 
@@ -40,7 +40,7 @@
 为了在会话之间共享记忆，最好的办法是使用一个技能或命令来总结和检查进度，然后将其保存到 `.claude` 文件夹中的 `.tmp` 文件中，并追加内容直到会话结束。第二天，它可以利用该文件作为上下文，从你停下的地方继续，为每个会话创建一个新文件，这样你就不会把旧的上下文污染到新工作中。
 
 ![会话存储文件树](./assets/images/longform/03-session-storage.png)
-*会话存储示例 -> https://github.com/SX2000CN/everything-claude-code/tree/main/examples/sessions*
+*会话存储示例 -> https://github.com/SX2000CN/claude-bockup/tree/main/examples/sessions*
 
 Claude 创建一个文件总结当前状态。审查它，如果需要则要求修改，然后重新开始。对于新的对话，只需提供文件路径即可。当你遇到上下文限制并需要继续复杂工作时特别有用。这些文件应包含：
 - 哪些方法奏效了（有证据核实）
@@ -82,7 +82,7 @@ alias claude-research='claude --system-prompt "$(cat ~/.claude/contexts/research
 - **Stop Hook (Session End)**: 在会话结束时，将学到的知识持久化到文件
 - **SessionStart Hook**: 在新会话开始时，自动加载之前的上下文
 
-我已经构建了这些钩子，它们在仓库中的位置是 `github.com/SX2000CN/everything-claude-code/tree/main/hooks/memory-persistence`
+我已经构建了这些钩子，它们在仓库中的位置是 `github.com/SX2000CN/claude-bockup/tree/main/hooks/memory-persistence`
 
 ---
 
@@ -94,7 +94,7 @@ alias claude-research='claude --system-prompt "$(cat ~/.claude/contexts/research
 
 **解决方案:** 当 Claude Code 发现了一些非琐碎的东西——一种调试技术、一个变通方法、一些特定于项目的模式——它会将该知识保存为一项新技能。下次出现类似问题时，该技能会自动加载。
 
-我构建了一个执行此操作的持续学习技能：`github.com/SX2000CN/everything-claude-code/tree/main/skills/continuous-learning`
+我构建了一个执行此操作的持续学习技能：`github.com/SX2000CN/claude-bockup/tree/main/skills/continuous-learning`
 
 **为什么是 Stop Hook (而不是 UserPromptSubmit):**
 
@@ -327,7 +327,7 @@ alias q='cd ~/Desktop/projects'
 
 **自我改进的记忆:**
 
-- https://github.com/SX2000CN/everything-claude-code/tree/main/skills/continuous-learning
+- https://github.com/SX2000CN/claude-bockup/tree/main/skills/continuous-learning
 - rlancemartin.github.io/2025/12/01/claude_diary/ - 会话反思模式
 
 **系统提示参考:**
@@ -351,4 +351,4 @@ alias q='cd ~/Desktop/projects'
 
 ---
 
-*两个指南中涵盖的所有内容都可以在 GitHub 上的 [everything-claude-code](https://github.com/SX2000CN/everything-claude-code) 找到*
+*两个指南中涵盖的所有内容都可以在 GitHub 上的 [everything-claude-code](https://github.com/SX2000CN/claude-bockup) 找到*

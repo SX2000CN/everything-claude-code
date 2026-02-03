@@ -67,7 +67,7 @@
 
 ```bash
 # 新增市集
-/plugin marketplace add SX2000CN/everything-claude-code
+/plugin marketplace add SX2000CN/claude-bockup
 
 # 安裝外掛程式
 /plugin install everything-claude-code@everything-claude-code
@@ -79,7 +79,7 @@
 
 ```bash
 # 首先複製儲存庫
-git clone https://github.com/SX2000CN/everything-claude-code.git
+git clone https://github.com/SX2000CN/claude-bockup.git
 
 # 複製規則（應用於所有專案）
 cp -r everything-claude-code/rules/* ~/.claude/rules/
@@ -264,7 +264,7 @@ everything-claude-code/
 
 ```bash
 # 將此儲存庫新增為市集
-/plugin marketplace add SX2000CN/everything-claude-code
+/plugin marketplace add SX2000CN/claude-bockup
 
 # 安裝外掛程式
 /plugin install everything-claude-code@everything-claude-code
@@ -298,7 +298,7 @@ everything-claude-code/
 
 ```bash
 # 複製儲存庫
-git clone https://github.com/SX2000CN/everything-claude-code.git
+git clone https://github.com/SX2000CN/claude-bockup.git
 
 # 將代理程式複製到您的 Claude 設定
 cp everything-claude-code/agents/*.md ~/.claude/agents/
